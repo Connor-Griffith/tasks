@@ -1,4 +1,4 @@
-import React, { act } from "react";
+wimport React, { act } from "react";
 import { render, screen } from "@testing-library/react";
 import { ChangeType } from "./ChangeType";
 
