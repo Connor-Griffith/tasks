@@ -11,7 +11,9 @@ export function GiveAttempts(): React.JSX.Element {
     };
 
     const gainAttempts = () => {
-        setAttempts((newAttempt) => newAttempt + reqAttempts);
+        if (reqAttempts > 0) {
+            setAttempts((newAttempt) => newAttempt + reqAttempts);
+        }
     };
 
     return (
