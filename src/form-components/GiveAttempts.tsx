@@ -29,7 +29,9 @@ export function GiveAttempts(): React.JSX.Element {
             <Button onClick={useAttempts} disabled={attempts === 0}>
                 Use Attempt
             </Button>
-            <Button onClick={gainAttempts}>Gain Attempt</Button>
+            <Button onClick={gainAttempts} disabled={reqAttempts <= 0}>
+                Gain Attempt
+            </Button>
             <div>Remaining Attempts: {attempts}</div>
         </div>
     );
